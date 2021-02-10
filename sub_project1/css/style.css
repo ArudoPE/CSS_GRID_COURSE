@@ -1,0 +1,43 @@
+/*RESET*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*SHARED*/
+:root {
+    --black: rgb(21, 21, 21);
+    --white: rgb(232, 232, 232);
+    --main-font-size: 1.6rem;
+}
+.item {
+    font-size: var(--main-font-size);
+    border: 1px red solid;
+    background-color: lightblue;
+}
+/*MAIN*/
+.container {
+    display: grid;
+    grid-template: repeat(4,1fr) / repeat(3,1fr);
+    height: 100vh;
+    gap: 1rem;
+    grid-template-areas:
+    "header header"
+    "asida main"
+    "footer footer"
+    ;
+}
+.item1 {
+    background-color: blue;
+/*Grid column estar dice dónde inicia el elemento
+y Grid column end dice dónde termina*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item8 {
+    grid-column: 2 / 4;
+}
