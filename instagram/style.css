@@ -53,8 +53,11 @@ html {
 /*HEADER*/
 .header {
     border-bottom: solid 1px #e1e1e1;
-    margin-bottom: 10px;
     padding: 10px;
+    position: fixed;
+    background-color: #fafafa;
+    width: 100%;
+    z-index: 2;
 }
 .header-nav {
     display: flex;
@@ -72,8 +75,22 @@ html {
     text-align: center;
     padding-top: 7px;
 }
+.header-icon-container {
+    display: flex;
+}
+.header-icon-link {
+    margin-right: 35px;
+}
 .header-profile-image img {
-    width: 40px;
+    position: absolute;
+    right: 5px;
+    top: 6px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.separator {
+    height: 65px;
 }
 /*MAIN*/
 .main {
