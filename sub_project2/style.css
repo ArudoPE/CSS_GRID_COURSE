@@ -21,14 +21,18 @@ body {
     display: grid;
     /* grid-template-columns: [inicioColumn] 1fr [linea2] 1fr [linea3] 1fr [destacado-end] 1fr [linea5]1fr [destacado2-end] 1fr [linea7] 1fr [final];
     grid-template-rows: [inicioRow] 200px [inicio2] 200px [final]; */
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(4, 100px);
     height: 100vh;
     gap: 5px;
+    /* justify-content: start end center stretch space-around space-between space-evenly;
+    align-content: start end center stretch space-around space-between space-evenly; */
+    justify-content: center;
+    align-content: center;
     /* justify-items: start end center stretch;
     align-items: start end center stretch; */
-    justify-items: center;
-    align-items: center;
+    /* justify-items: center;
+    align-items: center; */
     /* align-items: start end center stretch; */
     /* grid-auto-flow: column;
     grid-auto-columns: 50px 100px; */
@@ -64,8 +68,8 @@ body {
     /* grid-column: 5 / 6;
     grid-row: 3 / 4; */
     background-color: chartreuse;
-    align-self: start;
-    justify-self: start;
+    /* align-self: start;
+    justify-self: start; */
 }
 .item6 {
     /* grid-column: 6 / 7;
